@@ -12,7 +12,7 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-  origin: ['http://localhost:3000','http://192.168.1.104:3000'],  // Your Vercel frontend URL
+  origin: ['https://sudhakar-chicken.vercel.app', 'http://localhost:3000'],  // Your Vercel frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allowing these HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'],  // Allowing specific headers
   credentials: true,  // This allows cookies to be sent if needed
@@ -36,7 +36,7 @@ app.use((req, res) => {
 });
 
 // Connect to MongoDB and start the server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 const startServer = async () => {
   try {
