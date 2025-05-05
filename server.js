@@ -24,7 +24,7 @@ app.use(express.json());
 
 // Root route
 app.get("/", (req, res) => {
-  res.send("✅ Backend is running successfully!");
+  res.send("✅ Backend 2 is running successfully!");
 });
 
 // API routes
